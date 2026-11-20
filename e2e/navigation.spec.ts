@@ -5,7 +5,7 @@ test.describe("desktop navigation", () => {
   test("each nav link scrolls its section into view and updates the URL", async ({ page }) => {
     await page.goto("/");
     const nav = page.getByRole("navigation", { name: "Primary" });
-    await expect(nav.getByRole("link")).toHaveText(["About", "Skills", "Experience", "Projects", "Achievements", "Contact"]);
+    await expect(nav.getByRole("link")).toHaveText(["About", "Skills", "Experience", "Recommendations", "Projects", "Achievements", "Contact"]);
     for (const [name, id] of [
       ["Skills", "skills"],
       ["Contact", "contact"]
@@ -45,7 +45,7 @@ test.describe("mobile navigation", () => {
     await page.goto("/");
     await page.getByRole("button", { name: "Open navigation menu" }).click();
     const mobileNav = page.getByRole("navigation", { name: "Mobile" });
-    await expect(mobileNav.getByRole("link")).toHaveText(["About", "Skills", "Experience", "Projects", "Achievements", "Contact"]);
+    await expect(mobileNav.getByRole("link")).toHaveText(["About", "Skills", "Experience", "Recommendations", "Projects", "Achievements", "Contact"]);
     await mobileNav.getByRole("link", { name: "Projects" }).tap();
     await expect(mobileNav).toBeHidden();
     await expect(page).toHaveURL(/#projects$/);

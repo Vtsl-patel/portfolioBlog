@@ -18,7 +18,13 @@ export function ContactSection({ profile, align }: { profile: Profile; align?: S
       id="contact"
       align={align}
       backdrop={
-        <div className="absolute -right-32 top-1/2 w-[30rem] -translate-y-1/2 opacity-30 sm:-right-20 sm:w-[38rem] lg:-right-10 lg:w-[44rem]">
+        <div
+          className={
+            align === "right"
+              ? "absolute -right-32 top-1/2 w-[30rem] -translate-y-1/2 opacity-30 sm:-right-20 sm:w-[38rem] lg:-right-10 lg:w-[44rem]"
+              : "absolute -right-32 top-1/2 w-[30rem] -translate-y-1/2 opacity-30 sm:-right-20 sm:w-[38rem] lg:-left-24 lg:right-auto lg:w-[44rem]"
+          }
+        >
           <Orrery />
         </div>
       }

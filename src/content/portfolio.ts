@@ -174,5 +174,39 @@ export const portfolioData: PortfolioData = {
         { label: "Codeforces", url: "https://codeforces.com/profile/vatsal_patel" }
       ]
     }
+  ],
+  recommendations: [
+    {
+      id: "ayush-banerjee",
+      name: "Ayush Banerjee",
+      headline: "Startup Partnerships, Mesa School | ISB",
+      relationship: "Worked with Vatsal on the same team",
+      date: "2026-10-17",
+      text: [
+        "Aggressive builder & problem solver. Additionally, very good at going door to door of every internal team to get his dependencies met.",
+        "Built the entire customer portal offering of DevRev including multi language capabilities, AI deflection on ticket creation, test coverage & reliability systems. His ownership of multi language roped in ~$1.3 mn."
+      ]
+    },
+    {
+      id: "ayush-pandya",
+      name: "Ayush Pandya",
+      headline: "Member of Technical Staff @Devrev",
+      relationship: "Worked with Vatsal on the same team",
+      date: "2026-10-17",
+      text: [
+        "I’ve enjoyed working with Vatsal Patel at DevRev. What I appreciate most is that Vatsal’s attention doesn’t end when the code is written. He cares about deployment, observability, and how the product performs in practice. He’s a thoughtful, dependable engineer who takes responsibility for the full journey from implementation to production. I’d gladly recommend him to any team that values that kind of follow-through."
+      ]
+    },
+    {
+      id: "yash-mantri",
+      name: "Yash Mantri",
+      headline: "Engineering @ DevRev | ReactJS, React Native, Typescript, Javascript and NextJS | Ex- Navi, AJIO",
+      relationship: "Worked with Vatsal on different teams",
+      date: "2026-10-19",
+      text: [
+        "I had the opportunity to work with Vatsal on multiple initiatives. He is a collaborative and dependable engineer who takes ownership of his work and works well with the team to solve problems.",
+        "I really enjoyed working with him and appreciate his technical expertise, collaborative mindset, and commitment to delivering quality work. I’d be happy to recommend him!"
+      ]
+    }
   ]
 };

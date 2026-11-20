@@ -23,12 +23,12 @@ describe("section registry", () => {
   });
 
   it("alternates the title rail left/right, starting left", () => {
-    expect(sectionAligns()).toEqual(["left", "right", "left", "right", "left", "right"]);
+    expect(sectionAligns()).toEqual(["left", "right", "left", "right", "left", "right", "left"]);
   });
 
   it("skips hidden sections and keeps the zig-zag intact", () => {
     sectionRegistry.find((s) => s.id === "skills")!.visible = false;
     expect(resolveSections(portfolioData).map((s) => s.id)).not.toContain("skills");
-    expect(sectionAligns()).toEqual(["left", "right", "left", "right", "left"]);
+    expect(sectionAligns()).toEqual(["left", "right", "left", "right", "left", "right"]);
   });
 });

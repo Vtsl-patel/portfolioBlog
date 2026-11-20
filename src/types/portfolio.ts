@@ -112,6 +112,20 @@ export interface AchievementItem {
   links?: { label: string; url: string }[];
 }
 
+/** A public LinkedIn recommendation, quoted verbatim. */
+export interface RecommendationItem {
+  id: string;
+  name: string;
+  /** The recommender's headline at the time shown. */
+  headline: string;
+  /** e.g. "Worked with Vatsal on the same team". */
+  relationship: string;
+  /** ISO date; shown as month and year. */
+  date: string;
+  /** One entry per paragraph. */
+  text: string[];
+}
+
 export interface PortfolioData {
   profile: Profile;
   skills: SkillGroup[];
@@ -119,4 +133,5 @@ export interface PortfolioData {
   education: EducationItem[];
   projects: ProjectItem[];
   achievements: AchievementItem[];
+  recommendations: RecommendationItem[];
 }

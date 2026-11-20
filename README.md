@@ -48,7 +48,7 @@ src/
 ├── app/                 # Routes: layout, page, robots, sitemap, OG images, 404, global CSS tokens
 ├── components/
 │   ├── layout/          # Navbar, scrollspy, mobile drawer, footer
-│   ├── sections/        # Hero, About, Skills, Experience, Projects, Achievements, Contact + registry
+│   ├── sections/        # Hero, About, Skills, Experience, Recommendations, Projects, Achievements, Contact + registry
 │   └── ui/              # Primitives, icons, RichText, Starfield, CodeConstellation, Orrery
 ├── config/              # Site URL, indexing rules, SEO defaults
 ├── content/             # All portfolio copy (single source of truth)

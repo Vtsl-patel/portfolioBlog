@@ -5,6 +5,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { RecommendationsSection } from "@/components/sections/RecommendationsSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
 import type { SectionAlign } from "@/components/ui/primitives";
 import type { PortfolioData } from "@/types/portfolio";
@@ -45,6 +46,12 @@ export const sectionRegistry: SectionDefinition[] = [
     render: (d, align) => (
       <ExperienceSection experiences={d.experiences} education={d.education} align={align} />
     )
+  },
+  {
+    id: "recommendations",
+    navLabel: "Recommendations",
+    zigzag: true,
+    render: (d, align) => <RecommendationsSection recommendations={d.recommendations} align={align} />
   },
   {
     id: "projects",

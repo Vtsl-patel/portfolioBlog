@@ -17,6 +17,7 @@ test.describe("home page", () => {
       "About Me",
       "Skills & Technologies",
       "Experience",
+      "What Colleagues Say",
       "Featured Work",
       "Achievements",
       "Let's Connect"
@@ -26,6 +27,7 @@ test.describe("home page", () => {
       "about",
       "skills",
       "experience",
+      "recommendations",
       "projects",
       "achievements",
       "contact"
