@@ -22,7 +22,7 @@ export function Navbar({ profile, items }: NavbarProps) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-line bg-bg/80 backdrop-blur-md">
       <Container className="flex h-16 items-center justify-between">
-        <a href="#top" className="group flex items-center gap-2.5 text-sm font-semibold tracking-tight text-fg">
+        <a href="#top" className="group flex shrink-0 items-center gap-2.5 text-sm font-semibold tracking-tight text-fg">
           <span
             aria-hidden="true"
             className="flex h-8 w-8 items-center justify-center rounded-lg border border-line bg-surface-muted text-xs font-bold text-brand-text transition-colors group-hover:border-brand/50"
@@ -40,7 +40,7 @@ export function Navbar({ profile, items }: NavbarProps) {
         <DesktopNav items={items} />
 
         <div className="flex items-center gap-2">
-          <div className="hidden items-center gap-3 lg:flex">
+          <div className="hidden items-center gap-3 xl:flex">
             <LinkButton
               href={siteConfig.resume.href}
               download={siteConfig.resume.downloadName}

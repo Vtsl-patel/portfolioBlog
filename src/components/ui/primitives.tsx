@@ -92,7 +92,7 @@ export function Section({
             </p>
             <h2
               id={headingId}
-              className="mt-3 text-3xl font-extrabold tracking-tight text-fg sm:text-4xl"
+              className="mt-3 break-words text-3xl font-extrabold tracking-tight text-fg sm:text-4xl"
             >
               {title}
             </h2>

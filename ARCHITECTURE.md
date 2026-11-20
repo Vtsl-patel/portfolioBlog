@@ -93,7 +93,7 @@ If you need interactivity, make the smallest possible client component and keep 
 - **Primitives (`ui/primitives.tsx`):** `Container` (`max-w-7xl`), `Section`, `Card`, `Chip`/`ChipList`, `IconBadge`, `LinkButton` (variants `primary|secondary|ghost`, sizes `sm|md`), `IconLink`.
 - **Icons:** `ui/Icon.tsx` maps an `IconKey` to a component. To add an icon: extend `IconKey` in `types/portfolio.ts` and register it in `Icon.tsx`.
 - **Responsive rules that matter:**
-  - Navbar uses the full desktop layout from `lg`; below that, a compact menu.
+  - Navbar shows the full link row from `lg` (the Resume and Say Hello buttons join it from `xl`); below `lg`, a compact menu.
   - Hero is two columns from `lg`; its CTA buttons form a 2x2 grid below `md` and one row from `md`.
   - The hero heading size scales with its own column (`@container` + `clamp(..., cqw, ...)`) so it stays on one line.
   - Below `lg` the constellation is a dimmed, cropped backdrop behind the hero text instead of a column.
